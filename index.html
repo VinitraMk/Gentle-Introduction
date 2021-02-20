@@ -1,0 +1,418 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Experiment Results</title>
+<link href="./index.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="nav">
+<a class="nav-brand" href="/">Experiment Results</a>
+</nav>
+<main class="main" id="root">
+<div class="container"><p>Training data shape: (307511, 122)</p><p>Test data shape: (48744, 121)</p><img class="container-img" src="/.output/1613846576.824422.png"/></div><div class="container"><img class="container-img" src="/.output/1613846579.5901.png"/><img class="container-img" src="/.output/1613846580.17208.png"/></div><div class="container"><h2 class="title title-section">Most positive correlations</h2><table border="1" class="table">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Unnamed: 0</th>
+<th>TARGET</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>OCCUPATION_TYPE_Laborers</td>
+<td>0.043019</td>
+</tr>
+<tr>
+<th>1</th>
+<td>FLAG_DOCUMENT_3</td>
+<td>0.044346</td>
+</tr>
+<tr>
+<th>2</th>
+<td>REG_CITY_NOT_LIVE_CITY</td>
+<td>0.044395</td>
+</tr>
+<tr>
+<th>3</th>
+<td>FLAG_EMP_PHONE</td>
+<td>0.045982</td>
+</tr>
+<tr>
+<th>4</th>
+<td>NAME_EDUCATION_TYPE_Secondary / secondary special</td>
+<td>0.049824</td>
+</tr>
+<tr>
+<th>5</th>
+<td>REG_CITY_NOT_WORK_CITY</td>
+<td>0.050994</td>
+</tr>
+<tr>
+<th>6</th>
+<td>DAYS_ID_PUBLISH</td>
+<td>0.051457</td>
+</tr>
+<tr>
+<th>7</th>
+<td>CODE_GENDER_M</td>
+<td>0.054713</td>
+</tr>
+<tr>
+<th>8</th>
+<td>DAYS_LAST_PHONE_CHANGE</td>
+<td>0.055218</td>
+</tr>
+<tr>
+<th>9</th>
+<td>NAME_INCOME_TYPE_Working</td>
+<td>0.057481</td>
+</tr>
+<tr>
+<th>10</th>
+<td>REGION_RATING_CLIENT</td>
+<td>0.058899</td>
+</tr>
+<tr>
+<th>11</th>
+<td>REGION_RATING_CLIENT_W_CITY</td>
+<td>0.060893</td>
+</tr>
+<tr>
+<th>12</th>
+<td>DAYS_EMPLOYED</td>
+<td>0.074958</td>
+</tr>
+<tr>
+<th>13</th>
+<td>DAYS_BIRTH</td>
+<td>0.078239</td>
+</tr>
+<tr>
+<th>14</th>
+<td>TARGET</td>
+<td>1.000000</td>
+</tr>
+</tbody>
+</table><h2 class="title title-section">Most negative correlations</h2><table border="1" class="table">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Unnamed: 0</th>
+<th>TARGET</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>EXT_SOURCE_3</td>
+<td>-0.178919</td>
+</tr>
+<tr>
+<th>1</th>
+<td>EXT_SOURCE_2</td>
+<td>-0.160472</td>
+</tr>
+<tr>
+<th>2</th>
+<td>EXT_SOURCE_1</td>
+<td>-0.155317</td>
+</tr>
+<tr>
+<th>3</th>
+<td>NAME_EDUCATION_TYPE_Higher education</td>
+<td>-0.056593</td>
+</tr>
+<tr>
+<th>4</th>
+<td>CODE_GENDER_F</td>
+<td>-0.054704</td>
+</tr>
+<tr>
+<th>5</th>
+<td>NAME_INCOME_TYPE_Pensioner</td>
+<td>-0.046209</td>
+</tr>
+<tr>
+<th>6</th>
+<td>DAYS_EMPLOYED_ANOM</td>
+<td>-0.045987</td>
+</tr>
+<tr>
+<th>7</th>
+<td>ORGANIZATION_TYPE_XNA</td>
+<td>-0.045987</td>
+</tr>
+<tr>
+<th>8</th>
+<td>FLOORSMAX_AVG</td>
+<td>-0.044003</td>
+</tr>
+<tr>
+<th>9</th>
+<td>FLOORSMAX_MEDI</td>
+<td>-0.043768</td>
+</tr>
+<tr>
+<th>10</th>
+<td>FLOORSMAX_MODE</td>
+<td>-0.043226</td>
+</tr>
+<tr>
+<th>11</th>
+<td>EMERGENCYSTATE_MODE_No</td>
+<td>-0.042201</td>
+</tr>
+<tr>
+<th>12</th>
+<td>HOUSETYPE_MODE_block of flats</td>
+<td>-0.040594</td>
+</tr>
+<tr>
+<th>13</th>
+<td>AMT_GOODS_PRICE</td>
+<td>-0.039645</td>
+</tr>
+<tr>
+<th>14</th>
+<td>REGION_POPULATION_RELATIVE</td>
+<td>-0.037227</td>
+</tr>
+</tbody>
+</table></div><div class="container"><p>Correlation between DAYS_BIRTH and TARGET: -0.07823930830982712</p><img class="container-img" src="/.output/1613846624.427352.png"/><img class="container-img" src="/.output/1613846626.112084.png"/></div><div class="container"><h2 class="title title-section">Age data converted to years</h2><table border="1" class="table">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Unnamed: 0</th>
+<th>TARGET</th>
+<th>DAYS_BIRTH</th>
+<th>YEARS_BIRTH</th>
+<th>YEARS_BIRTH_BINNED</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>0</td>
+<td>1</td>
+<td>9461</td>
+<td>25.920548</td>
+<td>(25.0, 30.0]</td>
+</tr>
+<tr>
+<th>1</th>
+<td>1</td>
+<td>0</td>
+<td>16765</td>
+<td>45.931507</td>
+<td>(45.0, 50.0]</td>
+</tr>
+<tr>
+<th>2</th>
+<td>2</td>
+<td>0</td>
+<td>19046</td>
+<td>52.180822</td>
+<td>(50.0, 55.0]</td>
+</tr>
+<tr>
+<th>3</th>
+<td>3</td>
+<td>0</td>
+<td>19005</td>
+<td>52.068493</td>
+<td>(50.0, 55.0]</td>
+</tr>
+<tr>
+<th>4</th>
+<td>4</td>
+<td>0</td>
+<td>19932</td>
+<td>54.608219</td>
+<td>(50.0, 55.0]</td>
+</tr>
+<tr>
+<th>5</th>
+<td>5</td>
+<td>0</td>
+<td>16941</td>
+<td>46.413699</td>
+<td>(45.0, 50.0]</td>
+</tr>
+<tr>
+<th>6</th>
+<td>6</td>
+<td>0</td>
+<td>13778</td>
+<td>37.747945</td>
+<td>(35.0, 40.0]</td>
+</tr>
+<tr>
+<th>7</th>
+<td>7</td>
+<td>0</td>
+<td>18850</td>
+<td>51.643836</td>
+<td>(50.0, 55.0]</td>
+</tr>
+<tr>
+<th>8</th>
+<td>8</td>
+<td>0</td>
+<td>20099</td>
+<td>55.065753</td>
+<td>(55.0, 60.0]</td>
+</tr>
+<tr>
+<th>9</th>
+<td>9</td>
+<td>0</td>
+<td>14469</td>
+<td>39.641096</td>
+<td>(35.0, 40.0]</td>
+</tr>
+</tbody>
+</table><h2 class="title title-section">Average for age grouped by bins</h2><table border="1" class="table">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>YEARS_BIRTH_BINNED</th>
+<th>TARGET</th>
+<th>DAYS_BIRTH</th>
+<th>YEARS_BIRTH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>(20.0, 25.0]</td>
+<td>0.123036</td>
+<td>8532.795625</td>
+<td>23.377522</td>
+</tr>
+<tr>
+<th>1</th>
+<td>(25.0, 30.0]</td>
+<td>0.111436</td>
+<td>10155.219250</td>
+<td>27.822518</td>
+</tr>
+<tr>
+<th>2</th>
+<td>(30.0, 35.0]</td>
+<td>0.102814</td>
+<td>11854.848377</td>
+<td>32.479037</td>
+</tr>
+<tr>
+<th>3</th>
+<td>(35.0, 40.0]</td>
+<td>0.089414</td>
+<td>13707.908253</td>
+<td>37.555913</td>
+</tr>
+<tr>
+<th>4</th>
+<td>(40.0, 45.0]</td>
+<td>0.078491</td>
+<td>15497.661233</td>
+<td>42.459346</td>
+</tr>
+<tr>
+<th>5</th>
+<td>(45.0, 50.0]</td>
+<td>0.074171</td>
+<td>17323.900441</td>
+<td>47.462741</td>
+</tr>
+<tr>
+<th>6</th>
+<td>(50.0, 55.0]</td>
+<td>0.066968</td>
+<td>19196.494791</td>
+<td>52.593136</td>
+</tr>
+<tr>
+<th>7</th>
+<td>(55.0, 60.0]</td>
+<td>0.055314</td>
+<td>20984.262742</td>
+<td>57.491131</td>
+</tr>
+<tr>
+<th>8</th>
+<td>(60.0, 65.0]</td>
+<td>0.052737</td>
+<td>22780.547460</td>
+<td>62.412459</td>
+</tr>
+<tr>
+<th>9</th>
+<td>(65.0, 70.0]</td>
+<td>0.037270</td>
+<td>24292.614340</td>
+<td>66.555108</td>
+</tr>
+</tbody>
+</table><img class="container-img" src="/.output/1613846626.508926.png"/></div><div class="container"><h2 class="title title-section">External sources correlation</h2><table border="1" class="table">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Unnamed: 0</th>
+<th>TARGET</th>
+<th>EXT_SOURCE_1</th>
+<th>EXT_SOURCE_2</th>
+<th>EXT_SOURCE_3</th>
+<th>DAYS_BIRTH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>TARGET</td>
+<td>1.000000</td>
+<td>-0.155317</td>
+<td>-0.160472</td>
+<td>-0.178919</td>
+<td>-0.078239</td>
+</tr>
+<tr>
+<th>1</th>
+<td>EXT_SOURCE_1</td>
+<td>-0.155317</td>
+<td>1.000000</td>
+<td>0.213982</td>
+<td>0.186846</td>
+<td>0.600610</td>
+</tr>
+<tr>
+<th>2</th>
+<td>EXT_SOURCE_2</td>
+<td>-0.160472</td>
+<td>0.213982</td>
+<td>1.000000</td>
+<td>0.109167</td>
+<td>0.091996</td>
+</tr>
+<tr>
+<th>3</th>
+<td>EXT_SOURCE_3</td>
+<td>-0.178919</td>
+<td>0.186846</td>
+<td>0.109167</td>
+<td>1.000000</td>
+<td>0.205478</td>
+</tr>
+<tr>
+<th>4</th>
+<td>DAYS_BIRTH</td>
+<td>-0.078239</td>
+<td>0.600610</td>
+<td>0.091996</td>
+<td>0.205478</td>
+<td>1.000000</td>
+</tr>
+</tbody>
+</table><img class="container-img" src="/.output/1613846626.886438.png"/><img class="container-img" src="/.output/1613846630.541386.png"/></div></main>
+</body>
+</html>
